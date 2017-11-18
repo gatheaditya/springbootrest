@@ -1,4 +1,4 @@
 
 
   
-web: java -jar target/MicroserviceApplication.jar
+web: java -jar target/microservice.jar
