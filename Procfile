@@ -1,4 +1,3 @@
 
-
+ web: java $JAVA_OPTS -cp target/classes:target/dependency/* MicroserviceApplication
   
-web: java -jar target/microservice.jar
