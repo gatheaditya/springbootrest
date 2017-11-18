@@ -1,1 +1,1 @@
-web:web: java $JAVA_OPTS -cp target/classes:target/dependency/* microservice
+web: java $JAVA_OPTS -Dserver.port=$PORT -jar target/*.jar 
