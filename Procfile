@@ -1,1 +1,3 @@
-web: java -jar target/MicroserviceApplication.jar
+
+ web: java $JAVA_OPTS -cp target/classes:target/dependency/* Main
+  
