@@ -14,7 +14,7 @@ public class companyController {
 	@ResponseBody
 	public String greeting()
 	{
-		return "Welcome to Company REST ";
+		return "Welcome to Company REST  service";
 	}
 
 }
