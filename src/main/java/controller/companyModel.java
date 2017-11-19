@@ -1,15 +1,15 @@
-package model;
+package controller;
 
-import java.util.Collection;
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
-import org.springframework.stereotype.Service;
-
-@Service
+@Entity
 public class companyModel {
 	
+	@Id
 	private String username;
 	private  String password;
-	private Collection <String> roles;
+	
 	public String getUsername() {
 		return username;
 	}
@@ -22,12 +22,8 @@ public class companyModel {
 	public void setPassword(String password) {
 		this.password = password;
 	}
-	public Collection<String> getRoles() {
-		return roles;
-	}
-	public void setRoles(Collection<String> roles) {
-		this.roles = roles;
-	}
+	
+	
 	
 	
 	
