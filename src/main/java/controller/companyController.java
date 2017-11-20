@@ -3,6 +3,7 @@ package controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -29,7 +30,16 @@ public class companyController {
 		cr.save(cm);
 		return "added";
 	}
-	
+	@GetMapping(path="/add/{uname}/{pwd}")	
+	public @ResponseBody String  add(@PathVariable("uname") String uname,@PathVariable("pwd") String pwd )
+	{
+		
+		companyModel cm = new companyModel();		
+		cm.setUsername(uname);
+		cm.setPassword(pwd);
+		cr.save(cm);
+		return "added";
+	}
 	@GetMapping(path="/all")
 	public @ResponseBody Iterable<companyModel> test()
 	{
