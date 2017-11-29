@@ -34,8 +34,7 @@ public class companyController {
 	@GetMapping(path="/add/{uname}/{pwd}")	
 	public @ResponseBody String  add(@PathVariable("uname") String uname,@PathVariable("pwd") String pwd )
 	{
-		HttpHeaders hh = new HttpHeaders();
-		hh.setAccessControlAllowOrigin("SAME ORIGIN");
+		
 		companyModel cm = new companyModel();		
 		cm.setUsername(uname);
 		cm.setPassword(pwd);
