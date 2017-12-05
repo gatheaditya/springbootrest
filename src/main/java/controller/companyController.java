@@ -40,7 +40,7 @@ public class companyController {
 		cm.setUsername(uname);
 		cm.setPassword(pwd);
 		cr.save(cm);
-		return "added";
+		return "add";
 	}
 	@GetMapping(path="/all")
 	@CrossOrigin(origins = "http://localhost:4200", maxAge = 3600)
